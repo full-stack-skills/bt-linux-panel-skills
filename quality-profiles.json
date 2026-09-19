@@ -1,0 +1,62 @@
+{
+  "bt-firewall-audit": {
+    "purpose": "审计宝塔主机端口暴露、防火墙规则和云安全组差异",
+    "artifact": "firewall-audit-report",
+    "success": "端口、规则来源、风险等级与修复建议均有证据",
+    "not_for": "直接修改防火墙或云安全组而没有动作级授权",
+    "near_miss": "网站应用层 5xx 或数据库慢查询诊断",
+    "basic_prompt": "只读检查 80、443、8765 端口的暴露范围",
+    "failure_prompt": "检查防火墙时出现远程连接中断",
+    "advanced_context": "多云安全组与主机防火墙并存"
+  },
+  "bt-mcp-setup": {
+    "purpose": "安全安装并配置宝塔 MCP 的多客户端接入",
+    "artifact": "mcp-setup-plan",
+    "success": "HTTPS、白名单、令牌和只读连通性验证全部通过",
+    "not_for": "下载后直接执行脚本或关闭 TLS 证书校验",
+    "near_miss": "通用 MCP Server 的开发或协议实现",
+    "basic_prompt": "为 Codex 配置宝塔 MCP 的只读连接",
+    "failure_prompt": "MCP 连接返回证书链或 403 错误",
+    "advanced_context": "Codex、ZCode 与 Kimi 需要共享同一面板端点"
+  },
+  "bt-mcp-tools": {
+    "purpose": "按风险等级选择宝塔 MCP 工具并生成调用计划",
+    "artifact": "mcp-tool-plan",
+    "success": "工具、参数、风险、授权和预期输出一一对应",
+    "not_for": "绕过工具风险分级直接执行高危操作",
+    "near_miss": "自由 shell 命令编写或 SSH 自动化",
+    "basic_prompt": "选择只读工具查看 CPU、内存和磁盘状态",
+    "failure_prompt": "工具调用返回参数不支持或权限不足",
+    "advanced_context": "一个工单同时涉及网站、数据库和服务状态"
+  },
+  "bt-panel-ops": {
+    "purpose": "路由并编排宝塔面板的跨域运维任务",
+    "artifact": "panel-operations-runbook",
+    "success": "每个子任务均路由到正确领域并完成独立验证",
+    "not_for": "未备份就执行删除、重启或批量配置变更",
+    "near_miss": "只需单一网站健康检查或单一防火墙审计",
+    "basic_prompt": "只读汇总面板、网站、数据库与服务健康状态",
+    "failure_prompt": "跨域检查只完成部分子任务",
+    "advanced_context": "生产面板维护窗口内的分阶段变更"
+  },
+  "bt-security-audit": {
+    "purpose": "审计宝塔服务器的 SSH、进程、SUID、WebShell、计划任务和权限风险",
+    "artifact": "security-audit-report",
+    "success": "六个维度均有证据、严重度和可回滚修复建议",
+    "not_for": "自动删除可疑文件或隔离生产服务而没有确认",
+    "near_miss": "合规认证、渗透测试或恶意样本逆向",
+    "basic_prompt": "只读执行六维安全基线检查",
+    "failure_prompt": "扫描权限不足导致部分目录无法读取",
+    "advanced_context": "多站点生产服务器的分级安全整改"
+  },
+  "bt-site-ops": {
+    "purpose": "诊断宝塔网站、Nginx、PHP-FPM、数据库与证书故障",
+    "artifact": "site-diagnosis-report",
+    "success": "故障层级、根因证据、修复建议和验证请求完整",
+    "not_for": "在未确认影响范围时重启生产服务或改写站点配置",
+    "near_miss": "仅做主机防火墙端口审计",
+    "basic_prompt": "只读诊断网站 502 并定位故障层级",
+    "failure_prompt": "诊断过程中日志不可读或服务状态未知",
+    "advanced_context": "多站点共享 PHP-FPM 与 MySQL 的生产环境"
+  }
+}

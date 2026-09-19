@@ -1,0 +1,20 @@
+{
+  "name": "bt-linux-panel-skills",
+  "version": "0.1.0",
+  "description": "Baota Linux panel operations, security audits, site diagnosis, and MCP setup skills",
+  "author": {
+    "name": "PartMe.AI",
+    "email": "partmeai@gmail.com"
+  },
+  "homepage": "https://github.com/full-stack-skills/bt-linux-panel-skills",
+  "repository": "https://github.com/full-stack-skills/bt-linux-panel-skills",
+  "source": "./",
+  "skills": [
+    "./skills/bt-firewall-audit",
+    "./skills/bt-mcp-setup",
+    "./skills/bt-mcp-tools",
+    "./skills/bt-panel-ops",
+    "./skills/bt-security-audit",
+    "./skills/bt-site-ops"
+  ]
+}
