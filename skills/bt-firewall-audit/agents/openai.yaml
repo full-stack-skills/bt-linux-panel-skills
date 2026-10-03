@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bt Firewall Audit"
+  short_description: "宝塔部署服务器的防火墙规则审计专家：检查 iptables/firewalld/ufw 规则、端口开放、IP 黑白名单、规则冲…"
+  default_prompt: "使用 $bt-firewall-audit，围绕“宝塔部署服务器的防火墙规则审计专家：检查 iptables/firewalld/ufw 规则、端口开放、IP 黑白名单、规则冲”处理我的当前需求。"

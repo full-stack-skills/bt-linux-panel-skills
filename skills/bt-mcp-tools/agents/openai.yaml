@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bt MCP Tools"
+  short_description: "宝塔 Linux 面板 13.0 的 MCP 协议 98 个工具分类速查"
+  default_prompt: "使用 $bt-mcp-tools，围绕“宝塔 Linux 面板 13.0 的 MCP 协议 98 个工具分类速查”处理我的当前需求。"

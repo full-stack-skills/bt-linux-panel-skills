@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bt Site Ops"
+  short_description: "宝塔部署环境下的网站诊断专家：分析 Nginx/Apache 配置、PHP-FPM、SSL 证书、数据库连接、响应慢、502/…"
+  default_prompt: "使用 $bt-site-ops，围绕“宝塔部署环境下的网站诊断专家：分析 Nginx/Apache 配置、PHP-FPM、SSL 证书、数据库连接、响应慢、502/”处理我的当前需求。"

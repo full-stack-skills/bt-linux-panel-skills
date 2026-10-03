@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bt Panel Ops"
+  short_description: "宝塔 Linux 面板综合运维：网站/数据库/服务/Docker/防火墙/SSL/计划任务/通知全场景综合诊断"
+  default_prompt: "使用 $bt-panel-ops，围绕“宝塔 Linux 面板综合运维：网站/数据库/服务/Docker/防火墙/SSL/计划任务/通知全场景综合诊断”处理我的当前需求。"

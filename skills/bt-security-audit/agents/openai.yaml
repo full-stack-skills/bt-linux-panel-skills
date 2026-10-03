@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bt Security Audit"
+  short_description: "宝塔部署服务器的安全审计专家：检查异常进程、SUID 文件、Webshell、SSH 安全、登录日志、可疑定时任务、入侵迹象、…"
+  default_prompt: "使用 $bt-security-audit，围绕“宝塔部署服务器的安全审计专家：检查异常进程、SUID 文件、Webshell、SSH 安全、登录日志、可疑定时任务、入侵迹象”处理我的当前需求。"

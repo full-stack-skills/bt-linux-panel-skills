@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bt MCP Setup"
+  short_description: "宝塔 Linux 面板 13.0 的 MCP 协议接入指南"
+  default_prompt: "使用 $bt-mcp-setup，围绕“宝塔 Linux 面板 13.0 的 MCP 协议接入指南”处理我的当前需求。"
